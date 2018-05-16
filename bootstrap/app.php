@@ -40,3 +40,4 @@ require __DIR__ . '/middleware.php';
 
 // Register routes
 require dirname(__DIR__) . '/routes/web.php';
+require dirname(__DIR__) . '/routes/rest.php';

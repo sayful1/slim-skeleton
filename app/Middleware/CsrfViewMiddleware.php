@@ -2,8 +2,8 @@
 
 namespace App\Middleware;
 
-use http\Env\Request;
-use http\Env\Response;
+use Slim\Http\Request;
+use Slim\Http\Response;
 
 /**
  * CsrfViewMiddleware
