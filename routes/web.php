@@ -1,5 +1,3 @@
 <?php
 
-$app->get( '/', function () {
-	echo 'Hope page';
-} );
+$app->get('/', '\App\Controllers\HomeController:index');
