@@ -17,7 +17,7 @@ environments:
     development:
         adapter: mysql
         host: localhost
-        name: rest
+        name: forum
         user: root
         pass: root
         port: 3306

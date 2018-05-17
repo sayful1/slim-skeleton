@@ -30,3 +30,24 @@ if ( ! function_exists('public_path')) {
         return dirname(__DIR__) . '/public/';
     }
 }
+
+if ( ! function_exists('process_time')) {
+    /**
+     * @param float $start_time
+     * @param float $current_time
+     *
+     * @return string
+     */
+    function process_time($start_time = null, $current_time = null)
+    {
+        if (empty($start_time)) {
+            $start_time = APPLICATION_START_TIME;
+        }
+        if (empty($current_time)) {
+            $current_time = microtime(true);
+        }
+        $runtime = number_format($current_time - $start_time, 6) . ' seconds';
+
+        return $runtime;
+    }
+}

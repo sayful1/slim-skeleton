@@ -42,9 +42,11 @@ class ApiUserController extends ApiController
      *
      * @param Request $request
      * @param Response $response
+     *
+     * @return string
      */
     public function test(Request $request, Response $response)
     {
-        return $this->respondWithSuccess('Works', ['key1' => 'options', 'key2' => 'options']);
+        return $this->respondNotFound(['process_time' => process_time()]);
     }
 }

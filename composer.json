@@ -33,6 +33,8 @@
         }
     },
     "scripts": {
-        "start": "php -S localhost:8080 -t public"
+        "start": "php -S localhost:8080 -t public",
+        "migrate": "php vendor/bin/phinx migrate",
+        "seed": "php vendor/bin/phinx seed:run"
     }
 }

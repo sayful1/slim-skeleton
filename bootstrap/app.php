@@ -4,6 +4,8 @@ use Dotenv\Dotenv;
 use Noodlehaus\Config;
 use Slim\App;
 
+define('APPLICATION_START_TIME', microtime(true));
+
 // Include vendor autoload file
 require dirname(__DIR__) . '/vendor/autoload.php';
 
